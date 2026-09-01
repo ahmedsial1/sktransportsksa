@@ -4,356 +4,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Request Mobile Crane Quote & Yard Locations - SK Transports KSA</title>
+    <title>Contact Us | 24/7 Crane Operations Saudi Arabia - SK Transports</title>
     <meta name="description"
-        content="Contact SK Transports KSA for instant crane rental and sales quotations in Saudi Arabia. 24/7 dispatch hotline +966 50 000 0000, yard locations in Riyadh, Dammam, Jeddah & NEOM.">
+        content="Contact SK Transports KSA for mobile crane rental, sales inquiries, and emergency dispatch across Riyadh, Dammam, Jubail, Jeddah, and NEOM. 24/7 hotline +966 50 000 0000.">
+    <link rel="stylesheet" href="/styles/main.css?v=4.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;700;900&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://sktransportsksa.com/contact-us" />
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css?v=3.0">
 </head>
 
 <body>
 
-    <!-- TOP UTILITY BAR -->
-    <div class="top-utility-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <div class="top-info-item">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <a href="tel:+966500000000">+966 50 000 0000</a>
-                        <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="top_phone_label">(24/7 Saudi Operations Hotline)</span>
-                    </div>
-                    <div class="top-info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@sktransportsksa.com">info@sktransportsksa.com</a>
-                    </div>
-                </div>
-                <div class="top-bar-right">
-                    <div class="top-info-item" data-i18n="top_service_areas">
-                        <i class="fa-solid fa-location-dot"></i> Service Coverage: Riyadh | Dammam / Jubail | Jeddah | NEOM
-                    </div>
-                    <div class="top-badge-saudi" data-i18n="top_badge">
-                        <i class="fa-solid fa-shield-halved"></i> Saudi Vision 2030 Partner
-                    </div>
-                    <button class="lang-selector-btn" onclick="toggleLanguage()">
-                        <i class="fa-solid fa-globe"></i>
-                        <span id="lang-toggle-text">العربية (AR)</span>
-                    </button>
-                </div>
+    <!-- Hoist Cable Visual -->
+    <div id="hoist-cable" style="position: fixed; left: 20px; top: 0; width: 2px; height: 30%; background: linear-gradient(180deg, var(--primary), transparent); z-index: 999; opacity: 0.3; pointer-events: none;"></div>
+
+    <!-- Top Ticker Bar -->
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item" data-i18n="ticker_text">
+                <i class="fa-solid fa-shield-halved"></i> ARAMCO & TUV STANDARDS COMPLIANT | SANY 50T–500T FLEET | 24/7 SUPPORT IN RIYADH, DAMMAM, JEDDAH & NEOM | DIRECT FACTORY SALES
+            </div>
+            <div class="ticker-item" data-i18n="ticker_text">
+                <i class="fa-solid fa-shield-halved"></i> ARAMCO & TUV STANDARDS COMPLIANT | SANY 50T–500T FLEET | 24/7 SUPPORT IN RIYADH, DAMMAM, JEDDAH & NEOM | DIRECT FACTORY SALES
             </div>
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION (HEADER) -->
-    <header class="header-main">
-        <div class="container">
-            <nav class="nav-container">
-                <a href="/" class="nav-logo">
-                    <img src="/assets/logo.png" alt="SK Transports KSA Logo">
-                    <div class="nav-logo-text">
-                        <span class="brand-title">SK <span>TRANSPORTS</span></span>
-                        <span class="brand-subtitle">Heavy Lifting & Cranes KSA</span>
-                    </div>
-                </a>
+    <!-- Main Navigation Header -->
+    <nav id="main-nav">
+        <a href="/" class="logo"><img src="/assets/logo.png" alt="SK TRANSPORTS KSA"></a>
+        
+        <!-- Mobile Burger -->
+        <div class="mobile-burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/fleet" data-i18n="nav_fleet">Fleet (Rent & Sale)</a></li>
+            <li><a href="/services" data-i18n="nav_services">Services</a></li>
+            <li><a href="/safety" data-i18n="nav_safety">Safety & Compliance</a></li>
+            <li><a href="/about" data-i18n="nav_about">About Us</a></li>
+            <li><a href="/contact-us" class="active" data-i18n="nav_contact">Contact</a></li>
+        </ul>
 
-                <button class="mobile-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="/#rfq-section" class="btn-premium" style="padding: 9px 20px; font-size: 0.85rem;" data-i18n="nav_quote_btn">Request a Quote</a>
+            
+            <div class="lang-selector-container">
+                <button class="lang-selector-btn" onclick="toggleLangMenu()">
+                    <span id="active-flag">🇬🇧 EN</span>
                 </button>
+                <div class="lang-dropdown-content">
+                    <a href="javascript:void(0)" onclick="setLanguage('en')">English (EN)</a>
+                    <a href="javascript:void(0)" onclick="setLanguage('ar')">العربية (AR)</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-                <ul class="nav-menu">
-                    <li><a href="/" data-i18n="nav_home"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="/fleet" data-i18n="nav_fleet"><i class="fa-solid fa-truck-monster"></i> Fleet (Rent & Sale)</a></li>
-                    <li><a href="/services" data-i18n="nav_services"><i class="fa-solid fa-gears"></i> Services</a></li>
-                    <li><a href="/safety" data-i18n="nav_safety"><i class="fa-solid fa-shield-halved"></i> Safety & Compliance</a></li>
-                    <li><a href="/about" data-i18n="nav_about"><i class="fa-solid fa-building"></i> About Us</a></li>
-                    <li><a href="/contact-us" class="active" data-i18n="nav_contact"><i class="fa-solid fa-headset"></i> Contact</a></li>
+    <!-- Page Header Banner -->
+    <div style="padding: 130px 20px 50px; text-align: center; background: radial-gradient(circle at 50% 30%, rgba(251, 146, 60, 0.1) 0%, transparent 70%);">
+        <h1 style="font-size: 3rem; font-weight: 900; color: #fff; text-transform: uppercase;">
+            Contact <span style="color: var(--primary);">SK Transports KSA</span>
+        </h1>
+        <p style="color: var(--text-dim); max-width: 750px; margin: 15px auto 0; font-size: 1.1rem;">
+            24/7 heavy lifting dispatch, crane rental quotations, and emergency site support across the Kingdom.
+        </p>
+    </div>
+
+    <!-- Contact Grid & RFQ Form -->
+    <section class="section" style="padding: 20px 20px 80px;">
+        <div class="grid-3" style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; max-width: 1300px; margin: 0 auto;">
+            
+            <!-- Info Cards -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="glass-card" style="padding: 30px;">
+                    <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 12px;"><i class="fa-solid fa-headset"></i> 24/7 Operations Hotline</h3>
+                    <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 15px;">Immediate phone dispatch for crane bookings and emergency breakdown service.</p>
+                    <a href="tel:+966500000000" style="color: #fff; font-size: 1.2rem; font-weight: 800; text-decoration: none; display: block; margin-bottom: 10px;">+966 50 000 0000</a>
+                    <a href="mailto:info@sktransportsksa.com" style="color: var(--primary); text-decoration: none; font-size: 0.9rem;">info@sktransportsksa.com</a>
+                </div>
+
+                <div class="glass-card" style="padding: 30px;">
+                    <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 12px;"><i class="fa-solid fa-location-dot"></i> Operational Yards</h3>
+                    <div style="display: flex; flex-direction: column; gap: 14px; color: var(--text-dim); font-size: 0.88rem;">
+                        <div>
+                            <strong style="color: #fff; display: block;">Riyadh Central Yard (Central Hub)</strong>
+                            <span>Exit 18, Industrial Area, Riyadh, Kingdom of Saudi Arabia</span>
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">Eastern Province Yard (Dammam/Jubail Hub)</strong>
+                            <span>King Abdulaziz Port Road, Dammam / Jubail Port Area</span>
+                        </div>
+                        <div>
+                            <strong style="color: #fff; display: block;">Western Province Hub (Jeddah)</strong>
+                            <span>Al-Khumra Logistics Zone, Jeddah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="padding: 30px; text-align: center;">
+                    <h4 style="color: #fff; margin-bottom: 10px;">Connect on WhatsApp</h4>
+                    <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 20px;">Direct instant chat with our technical rigging director.</p>
+                    <a href="https://wa.me/966500000000?text=Hello%20SK%20Transports%20KSA,%20I%20need%20a%20quote." target="_blank" class="btn-premium" style="padding: 10px 24px;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="glass-card" style="padding: 40px;">
+                <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 20px;">Send an Inquiry</h3>
+                <form id="rfq-form">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: #fff;">Full Name *</label>
+                        <input type="text" id="rfq-name" required placeholder="e.g. Engineer Ahmed Al-Otaibi" style="width: 100%; padding: 12px 16px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; outline: none;">
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: #fff;">Phone / WhatsApp *</label>
+                            <input type="tel" id="rfq-phone" required placeholder="+966 5X XXX XXXX" style="width: 100%; padding: 12px 16px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; outline: none;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: #fff;">Company</label>
+                            <input type="text" id="rfq-company" placeholder="Contracting Company" style="width: 100%; padding: 12px 16px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; outline: none;">
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: #fff;">Service Type *</label>
+                            <select id="rfq-service" required style="width: 100%; padding: 12px 16px; background: #0f172a; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; outline: none;">
+                                <option value="Rental - Wet Lease (With Aramco Operator)">Rental - Wet Lease (With Aramco Operator)</option>
+                                <option value="Rental - Dry Lease (Bare Crane)">Rental - Dry Lease (Bare Crane)</option>
+                                <option value="Direct Crane Purchase (Factory Sales)">Direct Crane Purchase (Factory Sales)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: #fff;">Crane Capacity *</label>
+                            <select id="rfq-capacity" required style="width: 100%; padding: 12px 16px; background: #0f172a; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; outline: none;">
+                                <option value="50 Ton (SANY STC 500)">50 Ton (SANY STC 500)</option>
+                                <option value="80 Ton (SANY STC 800)">80 Ton (SANY STC 800)</option>
+                                <option value="100 Ton (SANY STC 1000)">100 Ton (SANY STC 1000)</option>
+                                <option value="130 Ton (SANY STC 1300)">130 Ton (SANY STC 1300)</option>
+                                <option value="160 Ton (SANY STC 1600)">160 Ton (SANY STC 1600)</option>
+                                <option value="200 Ton (SANY SAC 2000)">200 Ton (SANY SAC 2000)</option>
+                                <option value="220 Ton (SANY SAC 2200)">220 Ton (SANY SAC 2200)</option>
+                                <option value="350 Ton (SANY SAC 3500)">350 Ton (SANY SAC 3500)</option>
+                                <option value="500 Ton (SANY SAC 5000)">500 Ton (SANY SAC 5000+)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px; color: #fff;">Message / Lift Requirements</label>
+                        <textarea id="rfq-scope" rows="4" placeholder="Describe your project, radius, location, and timeline..." style="width: 100%; padding: 12px 16px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; outline: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-premium" style="width: 100%; padding: 14px; font-size: 1rem;">
+                        <i class="fa-solid fa-paper-plane"></i> Send Quotation Request
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #01040f; border-top: 1px solid rgba(255,255,255,0.08); padding: 70px 20px 30px;">
+        <div class="footer-container" style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 50px;">
+            <div>
+                <a href="/" class="logo" style="margin-bottom: 15px; display: inline-block;"><img src="/assets/logo.png" alt="SK TRANSPORTS" style="height: 48px;"></a>
+                <p style="color: var(--text-dim); font-size: 0.88rem; line-height: 1.6; margin-bottom: 20px;">
+                    Saudi Arabia’s trusted partner for heavy truck mobile crane rental and direct machinery sales. Delivering certified lifting power for Vision 2030 mega-projects.
+                </p>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+                    <li><a href="/"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Home</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Fleet (Rent & Sale)</a></li>
+                    <li><a href="/services"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Services</a></li>
+                    <li><a href="/safety"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Safety & Compliance</a></li>
+                    <li><a href="/about"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> About Us</a></li>
+                    <li><a href="/contact-us"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Contact Us</a></li>
                 </ul>
-
-                <div class="nav-actions">
-                    <a href="/#rfq-section" class="btn btn-primary btn-sm" data-i18n="nav_quote_btn">
-                        <i class="fa-solid fa-file-invoice-dollar"></i> Request a Quote
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- PAGE BANNER -->
-    <section style="padding: 60px 0; background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); text-align: center;">
-        <div class="container">
-            <div class="section-badge">
-                <i class="fa-solid fa-headset"></i>
-                <span data-i18n="nav_contact">Contact Operations Desk</span>
             </div>
-            <h1 style="font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">
-                Get in Touch With SK Transports KSA
-            </h1>
-            <p style="color: var(--text-dim); max-width: 750px; margin: 0 auto; font-size: 1.05rem;">
-                Need an immediate crane mobilization or commercial machinery inquiry? Our 24/7 technical dispatch team is ready to assist across all provinces of Saudi Arabia.
-            </p>
-        </div>
-    </section>
-
-    <!-- CONTACT GRID & RFQ -->
-    <section class="section">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 36px; align-items: start; margin-bottom: 60px;">
-                
-                <!-- Contact Information Column -->
-                <div>
-                    <div class="stat-card" style="text-align: left; padding: 30px; margin-bottom: 24px;">
-                        <h3 style="color: #FFF; font-size: 1.3rem; margin-bottom: 20px;">Direct 24/7 Hotlines</h3>
-                        
-                        <div style="display: flex; flex-direction: column; gap: 18px;">
-                            <div style="display: flex; gap: 14px; align-items: center;">
-                                <div style="width: 44px; height: 44px; background: rgba(255, 184, 0, 0.12); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.2rem;">
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                </div>
-                                <div>
-                                    <span style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Saudi Hotline</span>
-                                    <a href="tel:+966500000000" style="color: #FFF; font-weight: 800; font-size: 1.1rem; display: block;">+966 50 000 0000</a>
-                                </div>
-                            </div>
-
-                            <div style="display: flex; gap: 14px; align-items: center;">
-                                <div style="width: 44px; height: 44px; background: rgba(37, 211, 102, 0.15); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: #25D366; font-size: 1.3rem;">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </div>
-                                <div>
-                                    <span style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Instant WhatsApp</span>
-                                    <a href="https://wa.me/966500000000?text=Hello%20SK%20Transports%20KSA,%20I%20need%20an%20instant%20crane%20quote." target="_blank" style="color: #25D366; font-weight: 800; font-size: 1.1rem; display: block;">Chat with Dispatcher</a>
-                                </div>
-                            </div>
-
-                            <div style="display: flex; gap: 14px; align-items: center;">
-                                <div style="width: 44px; height: 44px; background: rgba(56, 189, 248, 0.15); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: #38BDF8; font-size: 1.2rem;">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <span style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Direct Email</span>
-                                    <a href="mailto:info@sktransportsksa.com" style="color: #FFF; font-weight: 700; font-size: 1rem; display: block;">info@sktransportsksa.com</a>
-                                </div>
-                            </div>
-                        </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Fleet Capacity</h4>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 500 (50T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 800 (80T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 1000 (100T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 1600 (160T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY SAC 2200 (220T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY SAC 5000 (500T)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Saudi Yards & Hubs</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.85rem; color: var(--text-dim);">
+                    <div>
+                        <strong style="color: #fff; display: block;">Riyadh Central Yard</strong>
+                        <span>Exit 18, Industrial Area, Riyadh, KSA</span>
                     </div>
-
-                    <!-- Yard Addresses Card -->
-                    <div class="stat-card" style="text-align: left; padding: 30px;">
-                        <h3 style="color: #FFF; font-size: 1.3rem; margin-bottom: 18px;" data-i18n="footer_locations_title">Saudi Arabia Yards & Hubs</h3>
-                        
-                        <div class="footer-locations">
-                            <div class="location-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div>
-                                    <strong>Riyadh Central Yard</strong>
-                                    <span data-i18n="footer_loc_riyadh">Exit 18, Industrial Area, Riyadh, KSA</span>
-                                </div>
-                            </div>
-                            <div class="location-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div>
-                                    <strong>Eastern Province Hub</strong>
-                                    <span data-i18n="footer_loc_dammam">King Abdulaziz Port Rd, Dammam / Jubail</span>
-                                </div>
-                            </div>
-                            <div class="location-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div>
-                                    <strong>Western Province Yard</strong>
-                                    <span data-i18n="footer_loc_jeddah">Al-Khumra Industrial Zone, Jeddah</span>
-                                </div>
-                            </div>
-                            <div class="location-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <div>
-                                    <strong>NEOM Logistics Base</strong>
-                                    <span data-i18n="footer_loc_neom">Tabuk Logistics Corridor, KSA</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                        <strong style="color: #fff; display: block;">Direct Saudi Hotline:</strong>
+                        <a href="tel:+966500000000" style="color: var(--primary); font-weight: 700; font-size: 0.95rem;">+966 50 000 0000</a>
                     </div>
                 </div>
-
-                <!-- RFQ Form Column -->
-                <div>
-                    <div class="rfq-wrapper">
-                        <div class="rfq-header-banner">
-                            <div class="rfq-header-text">
-                                <h3 data-i18n="rfq_title">Request an Instant Heavy Lift Quote</h3>
-                                <p data-i18n="rfq_subtitle">Fill out the project details below for rapid quotation within 15 minutes.</p>
-                            </div>
-                        </div>
-
-                        <div class="rfq-form-body">
-                            <form id="rfq-form">
-                                <div class="rfq-grid">
-                                    <div class="form-group">
-                                        <label class="form-label" for="rfq-name"><span data-i18n="form_name">Full Name</span> <span class="req">*</span></label>
-                                        <input type="text" id="rfq-name" class="form-control" placeholder="e.g. Engineer Ahmed Al-Otaibi" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="rfq-company"><span data-i18n="form_company">Company Name</span></label>
-                                        <input type="text" id="rfq-company" class="form-control" placeholder="e.g. Al-Rashid Contracting Co.">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="rfq-phone"><span data-i18n="form_phone">Phone / WhatsApp Number (+966)</span> <span class="req">*</span></label>
-                                        <input type="tel" id="rfq-phone" class="form-control" placeholder="+966 5X XXX XXXX" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="rfq-service"><span data-i18n="form_service">Service Required</span> <span class="req">*</span></label>
-                                        <select id="rfq-service" class="form-control" required>
-                                            <option value="Rental - Wet Lease (With Operator)" data-i18n="form_service_opt1">Rental - Wet Lease (With Aramco Operator)</option>
-                                            <option value="Rental - Dry Lease (Bare Crane)" data-i18n="form_service_opt2">Rental - Dry Lease (Bare Crane)</option>
-                                            <option value="Direct Crane Purchase (Factory Sales)" data-i18n="form_service_opt3">Direct Crane Purchase (Factory Sales)</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="rfq-capacity"><span data-i18n="form_capacity">Required Tonnage Capacity</span> <span class="req">*</span></label>
-                                        <select id="rfq-capacity" class="form-control" required>
-                                            <option value="50 Ton (SANY STC 500)">50 Ton (SANY STC 500)</option>
-                                            <option value="80 Ton (SANY STC 800)">80 Ton (SANY STC 800)</option>
-                                            <option value="100 Ton (SANY STC 1000)">100 Ton (SANY STC 1000)</option>
-                                            <option value="130 Ton (SANY STC 1300)">130 Ton (SANY STC 1300)</option>
-                                            <option value="160 Ton (SANY STC 1600)">160 Ton (SANY STC 1600)</option>
-                                            <option value="200 Ton (SANY SAC 2000)">200 Ton (SANY SAC 2000)</option>
-                                            <option value="220 Ton (SANY SAC 2200)">220 Ton (SANY SAC 2200)</option>
-                                            <option value="350 Ton (SANY SAC 3500)">350 Ton (SANY SAC 3500)</option>
-                                            <option value="500 Ton (SANY SAC 5000)">500 Ton (SANY SAC 5000+)</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="rfq-location"><span data-i18n="form_location">Job Site Location in Saudi Arabia</span> <span class="req">*</span></label>
-                                        <select id="rfq-location" class="form-control" required>
-                                            <option value="Riyadh & Central Province" data-i18n="form_loc_riyadh">Riyadh & Central Province</option>
-                                            <option value="Eastern Province (Dammam, Jubail, Khobar)" data-i18n="form_loc_eastern">Eastern Province (Dammam, Jubail, Khobar, Ras Al Khair)</option>
-                                            <option value="Western Province (Jeddah, Makkah, Yanbu)" data-i18n="form_loc_western">Western Province (Jeddah, Makkah, Yanbu)</option>
-                                            <option value="NEOM / Tabuk / Red Sea Project" data-i18n="form_loc_neom">NEOM / Tabuk / Red Sea Project</option>
-                                            <option value="Other KSA Location" data-i18n="form_loc_other">Other KSA Location</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group full-width">
-                                        <label class="form-label" for="rfq-scope"><span data-i18n="form_scope">Scope of Work / Lift Radius / Duration</span></label>
-                                        <textarea id="rfq-scope" class="form-control" placeholder="Describe the lift details, required radius, approximate load weight, and lease duration (Daily, Monthly, Long-term)..."></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="rfq-submit-row">
-                                    <div class="rfq-trust-note">
-                                        <i class="fa-solid fa-shield-halved"></i>
-                                        <span data-i18n="form_note">Your data is secure. We respond within 15 minutes during active operations.</span>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-lg" data-i18n="form_submit_btn">
-                                        <i class="fa-solid fa-paper-plane"></i> Submit Quote Request
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer-main">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col footer-about">
-                    <a href="/" class="nav-logo" style="margin-bottom: 16px;">
-                        <img src="/assets/logo.png" alt="SK Transports Logo">
-                        <div class="nav-logo-text">
-                            <span class="brand-title">SK <span>TRANSPORTS</span></span>
-                            <span class="brand-subtitle">Heavy Lifting KSA</span>
-                        </div>
-                    </a>
-                    <p data-i18n="footer_about_text">
-                        Saudi Arabia’s trusted partner for heavy truck mobile crane rental and direct machinery sales. Delivering certified lifting power for Vision 2030 mega-projects.
-                    </p>
-                </div>
-
-                <div class="footer-col">
-                    <h4 data-i18n="footer_links_title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="/"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_home">Home</span></a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_fleet">Fleet (Rent & Sale)</span></a></li>
-                        <li><a href="/services"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_services">Services</span></a></li>
-                        <li><a href="/safety"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_safety">Safety & Compliance</span></a></li>
-                        <li><a href="/about"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_about">About Us</span></a></li>
-                        <li><a href="/contact-us"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_contact">Contact Us</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Fleet Capacity</h4>
-                    <ul class="footer-links">
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 500 (50T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 800 (80T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 1000 (100T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 1600 (160T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY SAC 2200 (220T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY SAC 5000 (500T)</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 data-i18n="footer_locations_title">Saudi Arabia Yards & Hubs</h4>
-                    <div class="footer-locations">
-                        <div class="location-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <strong>Riyadh Central Yard</strong>
-                                <span data-i18n="footer_loc_riyadh">Exit 18, Industrial Area, Riyadh, KSA</span>
-                            </div>
-                        </div>
-                        <div class="location-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <strong>Eastern Province Hub</strong>
-                                <span data-i18n="footer_loc_dammam">King Abdulaziz Port Rd, Dammam / Jubail</span>
-                            </div>
-                        </div>
-                        <div class="location-item" style="margin-top: 10px;">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <strong>Direct Saudi Hotline:</strong>
-                                <a href="tel:+966500000000" style="color: var(--primary); font-weight: 700;">+966 50 000 0000</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p data-i18n="footer_rights">© 2026 SK Transports KSA. All Rights Reserved. Aramco & TUV Standard Compliant.</p>
-            </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; font-size: 0.8rem; color: var(--text-dim);">
+            <p>© 2026 SK Transports KSA. All Rights Reserved. Aramco Standard & TUV Certified.</p>
         </div>
     </footer>
 
-    <!-- PERSISTENT FLOATING WHATSAPP -->
-    <a href="https://wa.me/966500000000?text=Hello%20SK%20Transports%20KSA,%20I%20need%20an%20instant%20quote%20for%20crane%20rental/sales." 
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/966500000000?text=Hello%20SK%20Transports%20KSA,%20I%20need%20assistance." 
        target="_blank" 
-       class="floating-whatsapp-btn" 
-       aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-        <div class="floating-whatsapp-pulse"></div>
+       class="floating-whatsapp" 
+       style="position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px; background: #25d366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); z-index: 2500; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Scripts -->
-    <script src="/js/main.js?v=3.0"></script>
+    <!-- Main JavaScript -->
+    <script src="/js/main.js?v=4.0"></script>
 </body>
 
 </html>

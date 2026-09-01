@@ -4,272 +4,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Heavy Lifting Specialists Saudi Arabia - SK Transports KSA</title>
+    <title>About Us | Heavy Lifting Specialists Saudi Arabia - SK Transports</title>
     <meta name="description"
         content="Learn about SK Transports KSA. Powering Saudi Vision 2030 mega-projects with certified SANY mobile crane rental and sales across Riyadh, Dammam, Jeddah, and NEOM.">
+    <link rel="stylesheet" href="/styles/main.css?v=4.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;700;900&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://sktransportsksa.com/about" />
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css?v=3.0">
 </head>
 
 <body>
 
-    <!-- TOP UTILITY BAR -->
-    <div class="top-utility-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <div class="top-info-item">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <a href="tel:+966500000000">+966 50 000 0000</a>
-                        <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="top_phone_label">(24/7 Saudi Operations Hotline)</span>
-                    </div>
-                    <div class="top-info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@sktransportsksa.com">info@sktransportsksa.com</a>
-                    </div>
-                </div>
-                <div class="top-bar-right">
-                    <div class="top-info-item" data-i18n="top_service_areas">
-                        <i class="fa-solid fa-location-dot"></i> Service Coverage: Riyadh | Dammam / Jubail | Jeddah | NEOM
-                    </div>
-                    <div class="top-badge-saudi" data-i18n="top_badge">
-                        <i class="fa-solid fa-shield-halved"></i> Saudi Vision 2030 Partner
-                    </div>
-                    <button class="lang-selector-btn" onclick="toggleLanguage()">
-                        <i class="fa-solid fa-globe"></i>
-                        <span id="lang-toggle-text">العربية (AR)</span>
-                    </button>
-                </div>
+    <!-- Hoist Cable Visual -->
+    <div id="hoist-cable" style="position: fixed; left: 20px; top: 0; width: 2px; height: 30%; background: linear-gradient(180deg, var(--primary), transparent); z-index: 999; opacity: 0.3; pointer-events: none;"></div>
+
+    <!-- Top Ticker Bar -->
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item" data-i18n="ticker_text">
+                <i class="fa-solid fa-shield-halved"></i> ARAMCO & TUV STANDARDS COMPLIANT | SANY 50T–500T FLEET | 24/7 SUPPORT IN RIYADH, DAMMAM, JEDDAH & NEOM | DIRECT FACTORY SALES
+            </div>
+            <div class="ticker-item" data-i18n="ticker_text">
+                <i class="fa-solid fa-shield-halved"></i> ARAMCO & TUV STANDARDS COMPLIANT | SANY 50T–500T FLEET | 24/7 SUPPORT IN RIYADH, DAMMAM, JEDDAH & NEOM | DIRECT FACTORY SALES
             </div>
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION (HEADER) -->
-    <header class="header-main">
-        <div class="container">
-            <nav class="nav-container">
-                <a href="/" class="nav-logo">
-                    <img src="/assets/logo.png" alt="SK Transports KSA Logo">
-                    <div class="nav-logo-text">
-                        <span class="brand-title">SK <span>TRANSPORTS</span></span>
-                        <span class="brand-subtitle">Heavy Lifting & Cranes KSA</span>
-                    </div>
-                </a>
-
-                <button class="mobile-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <ul class="nav-menu">
-                    <li><a href="/" data-i18n="nav_home"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="/fleet" data-i18n="nav_fleet"><i class="fa-solid fa-truck-monster"></i> Fleet (Rent & Sale)</a></li>
-                    <li><a href="/services" data-i18n="nav_services"><i class="fa-solid fa-gears"></i> Services</a></li>
-                    <li><a href="/safety" data-i18n="nav_safety"><i class="fa-solid fa-shield-halved"></i> Safety & Compliance</a></li>
-                    <li><a href="/about" class="active" data-i18n="nav_about"><i class="fa-solid fa-building"></i> About Us</a></li>
-                    <li><a href="/contact-us" data-i18n="nav_contact"><i class="fa-solid fa-headset"></i> Contact</a></li>
-                </ul>
-
-                <div class="nav-actions">
-                    <a href="/#rfq-section" class="btn btn-primary btn-sm" data-i18n="nav_quote_btn">
-                        <i class="fa-solid fa-file-invoice-dollar"></i> Request a Quote
-                    </a>
-                </div>
-            </nav>
+    <!-- Main Navigation Header -->
+    <nav id="main-nav">
+        <a href="/" class="logo"><img src="/assets/logo.png" alt="SK TRANSPORTS KSA"></a>
+        
+        <!-- Mobile Burger -->
+        <div class="mobile-burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
+        
+        <ul class="nav-links">
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/fleet" data-i18n="nav_fleet">Fleet (Rent & Sale)</a></li>
+            <li><a href="/services" data-i18n="nav_services">Services</a></li>
+            <li><a href="/safety" data-i18n="nav_safety">Safety & Compliance</a></li>
+            <li><a href="/about" class="active" data-i18n="nav_about">About Us</a></li>
+            <li><a href="/contact-us" data-i18n="nav_contact">Contact</a></li>
+        </ul>
 
-    <!-- PAGE BANNER -->
-    <section style="padding: 60px 0; background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); text-align: center;">
-        <div class="container">
-            <div class="section-badge">
-                <i class="fa-solid fa-building"></i>
-                <span data-i18n="footer_about_title">About SK Transports KSA</span>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="/#rfq-section" class="btn-premium" style="padding: 9px 20px; font-size: 0.85rem;" data-i18n="nav_quote_btn">Request a Quote</a>
+            
+            <div class="lang-selector-container">
+                <button class="lang-selector-btn" onclick="toggleLangMenu()">
+                    <span id="active-flag">🇬🇧 EN</span>
+                </button>
+                <div class="lang-dropdown-content">
+                    <a href="javascript:void(0)" onclick="setLanguage('en')">English (EN)</a>
+                    <a href="javascript:void(0)" onclick="setLanguage('ar')">العربية (AR)</a>
+                </div>
             </div>
-            <h1 style="font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">
-                Powering Heavy Lifting Infrastructure in Saudi Arabia
-            </h1>
-            <p style="color: var(--text-dim); max-width: 750px; margin: 0 auto; font-size: 1.05rem;">
-                A leading heavy truck mobile crane rental and machinery sales organization serving the Kingdom's most demanding industrial, energy, and Vision 2030 projects.
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <div style="padding: 130px 20px 50px; text-align: center; background: radial-gradient(circle at 50% 30%, rgba(251, 146, 60, 0.1) 0%, transparent 70%);">
+        <h1 style="font-size: 3rem; font-weight: 900; color: #fff; text-transform: uppercase;">
+            About <span style="color: var(--primary);">SK Transports KSA</span>
+        </h1>
+        <p style="color: var(--text-dim); max-width: 750px; margin: 15px auto 0; font-size: 1.1rem;">
+            Powering heavy lifting, crane rentals, and machinery infrastructure across the Kingdom of Saudi Arabia.
+        </p>
+    </div>
+
+    <!-- About Overview -->
+    <section class="section" style="padding: 20px 20px 80px;">
+        <div class="grid-3" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; max-width: 1300px; margin: 0 auto; align-items: center;">
+            <div>
+                <h2 style="font-size: 2.2rem; color: #fff; margin-bottom: 20px;">Leading Heavy Lifting in Saudi Arabia</h2>
+                <p style="color: var(--text-dim); line-height: 1.7; margin-bottom: 16px; font-size: 0.95rem;">
+                    SK Transports KSA is a recognized leader in mobile crane rentals, heavy transport logistics, and direct SANY machinery procurement. Supporting Saudi Arabia's Vision 2030 transformation, we operate across all key economic regions.
+                </p>
+                <p style="color: var(--text-dim); line-height: 1.7; margin-bottom: 25px; font-size: 0.95rem;">
+                    Our certified SANY fleet spans from 50 Ton to 500 Ton capacity, operated by Aramco-tested personnel and supported by on-site mechanical emergency teams in Riyadh, Dammam, Jubail, Jeddah, and NEOM.
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="glass-card" style="padding: 20px; text-align: center;">
+                        <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 4px;">100%</h3>
+                        <p style="color: #fff; font-size: 0.85rem; font-weight: 700;">Aramco Standard Compliant</p>
+                    </div>
+                    <div class="glass-card" style="padding: 20px; text-align: center;">
+                        <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 4px;">24/7</h3>
+                        <p style="color: #fff; font-size: 0.85rem; font-weight: 700;">Field & Mechanical Support</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="/assets/logistics.jpg.png" alt="Logistics and Fleet" style="border-radius: 16px; width: 100%; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 40px rgba(0,0,0,0.6);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section" style="background: rgba(15, 23, 42, 0.4); padding: 70px 20px;">
+        <div class="section-title" style="text-align: center; margin-bottom: 50px;">
+            <h2>Strategic Excellence.</h2>
+            <p style="color: var(--text-dim); font-size: 1.1rem; max-width: 700px; margin: 10px auto;">
+                Visionary leadership steering heavy lifting, crane fleet acquisitions, and engineering operations.
             </p>
         </div>
-    </section>
 
-    <!-- ABOUT STORY & VALUE PROPOSITION -->
-    <section class="section">
-        <div class="container">
-            <div class="safety-grid" style="margin-bottom: 60px;">
-                <div>
-                    <div class="section-badge"><i class="fa-solid fa-trophy"></i> Our Mission</div>
-                    <h2 style="font-size: 2.2rem; margin-bottom: 18px;">Engineering Safety & Heavy Capacity Across the Kingdom</h2>
-                    <p style="color: var(--text-dim); line-height: 1.7; margin-bottom: 16px;">
-                        SK Transports KSA was established to provide uncompromised heavy lifting and machinery logistics for general contractors, engineering firms, oil & gas operators, and governmental infrastructure developers.
-                    </p>
-                    <p style="color: var(--text-dim); line-height: 1.7; margin-bottom: 24px;">
-                        With strategic yards operating in <strong>Riyadh, Dammam/Jubail, Jeddah, and the NEOM corridor</strong>, we maintain a fleet of modern SANY mobile cranes ranging from 50 Ton to 500 Ton, backed by Aramco-certified operators and dedicated 24/7 mobile field service units.
-                    </p>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                        <div style="background: var(--bg-card); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-                            <div style="font-size: 1.8rem; color: var(--primary); font-weight: 900;">100%</div>
-                            <div style="font-size: 0.85rem; color: #FFF; font-weight: 700;">Saudi Aramco Compliant</div>
-                        </div>
-                        <div style="background: var(--bg-card); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-                            <div style="font-size: 1.8rem; color: var(--primary); font-weight: 900;">24/7</div>
-                            <div style="font-size: 0.85rem; color: #FFF; font-weight: 700;">Field Mechanical Support</div>
-                        </div>
-                    </div>
+        <div class="leadership-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; max-width: 1400px; margin: 0 auto;">
+            
+            <div class="glass-card" style="padding: 24px; text-align: center;">
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); box-shadow: 0 0 20px var(--primary-glow);">
+                    <img src="/assets/ceo.png" alt="Muhammad Amjad" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-
-                <div>
-                    <img src="/assets/logistics.jpg.png" alt="SK Transports Logistics and Crane Fleet" style="border-radius: var(--radius-lg); width: 100%; height: 380px; object-fit: cover; border: 1px solid var(--border-color); box-shadow: var(--shadow-lg);">
-                </div>
+                <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 4px;">Muhammad Amjad</h3>
+                <p style="color: var(--primary); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">Group Managing Director</p>
+                <p style="color: var(--text-dim); font-size: 0.82rem; line-height: 1.5;">Directing strategic growth, government relations, and major heavy lifting tenders across KSA.</p>
             </div>
 
-            <!-- Vision 2030 Alignment Banner -->
-            <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(15, 23, 42, 0.95) 100%); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-lg); padding: 35px 30px; margin-bottom: 60px;">
-                <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-                    <div style="width: 60px; height: 60px; background: rgba(16, 185, 129, 0.2); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #34D399;">
-                        <i class="fa-solid fa-mountain-city"></i>
-                    </div>
-                    <div style="flex: 1; min-width: 260px;">
-                        <h3 style="font-size: 1.4rem; color: #FFF; margin-bottom: 6px;">Committed to Saudi Vision 2030</h3>
-                        <p style="font-size: 0.9rem; color: var(--text-dim); line-height: 1.6;">
-                            Our fleet and engineering teams actively support flagship mega-projects including NEOM (The Line, Oxagon, Trojena), Red Sea Global, Qiddiya, King Salman Park, and Eastern Province industrial expansions.
-                        </p>
-                    </div>
+            <div class="glass-card" style="padding: 24px; text-align: center;">
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); box-shadow: 0 0 20px var(--primary-glow);">
+                    <img src="/assets/chairman.jpg.png" alt="Ch Munawar Hussain Sial" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
+                <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 4px;">Ch Munawar Hussain Sial</h3>
+                <p style="color: var(--primary); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">Group Chairman</p>
+                <p style="color: var(--text-dim); font-size: 0.82rem; line-height: 1.5;">Over 25 years of leadership in commercial heavy transport, crane fleet acquisitions, and logistics.</p>
             </div>
 
-            <!-- Operational Hubs Grid -->
-            <div style="margin-bottom: 60px;">
-                <div class="section-header">
-                    <div class="section-badge"><i class="fa-solid fa-map-location-dot"></i> Operational Footprint</div>
-                    <h2 class="section-title">Strategic Yards Across Saudi Arabia</h2>
-                    <p class="section-subtitle">Strategically positioned to deploy heavy lifting equipment within hours to any project site.</p>
+            <div class="glass-card" style="padding: 24px; text-align: center;">
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); box-shadow: 0 0 20px var(--primary-glow);">
+                    <img src="/assets/md2.jpg.jpeg" alt="Ch Arshad Ali Sial" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
+                <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 4px;">Ch Arshad Ali Sial</h3>
+                <p style="color: var(--primary); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">Director of Operations</p>
+                <p style="color: var(--text-dim); font-size: 0.82rem; line-height: 1.5;">Leading field crane operations, operator certifications, and 24/7 mechanical emergency response.</p>
+            </div>
 
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
-                    <div class="stat-card" style="text-align: left; padding: 24px;">
-                        <i class="fa-solid fa-city" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 12px;"></i>
-                        <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 6px;">Riyadh Central Yard</h4>
-                        <p style="color: var(--text-dim); font-size: 0.8rem; line-height: 1.5;">Exit 18, Industrial Area. Serving Riyadh Metro, Qiddiya, and Central Province civil projects.</p>
-                    </div>
-
-                    <div class="stat-card" style="text-align: left; padding: 24px;">
-                        <i class="fa-solid fa-anchor" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 12px;"></i>
-                        <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 6px;">Eastern Province Hub</h4>
-                        <p style="color: var(--text-dim); font-size: 0.8rem; line-height: 1.5;">King Abdulaziz Port Road, Dammam / Jubail. Dedicated to Aramco plants, Sabic complexes, and Ras Al Khair.</p>
-                    </div>
-
-                    <div class="stat-card" style="text-align: left; padding: 24px;">
-                        <i class="fa-solid fa-ship" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 12px;"></i>
-                        <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 6px;">Western Province Yard</h4>
-                        <p style="color: var(--text-dim); font-size: 0.8rem; line-height: 1.5;">Al-Khumra Industrial Zone, Jeddah. Supporting Jeddah Islamic Port, Makkah infrastructure, and Yanbu.</p>
-                    </div>
-
-                    <div class="stat-card" style="text-align: left; padding: 24px;">
-                        <i class="fa-solid fa-compass" style="color: var(--primary); font-size: 1.5rem; margin-bottom: 12px;"></i>
-                        <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 6px;">NEOM Base</h4>
-                        <p style="color: var(--text-dim); font-size: 0.8rem; line-height: 1.5;">Tabuk Logistics Corridor. Fast-track crane deployment for NEOM and Red Sea development sectors.</p>
-                    </div>
+            <div class="glass-card" style="padding: 24px; text-align: center;">
+                <div style="width: 150px; height: 150px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); box-shadow: 0 0 20px var(--primary-glow);">
+                    <img src="/assets/md.jpg" alt="Tasawar Hussain Sial" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
+                <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 4px;">Tasawar Hussain Sial</h3>
+                <p style="color: var(--primary); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">Head of Global Procurement</p>
+                <p style="color: var(--text-dim); font-size: 0.82rem; line-height: 1.5;">Managing direct factory procurement from SANY China, SASO clearance, and spare parts supply chain.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer-main">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col footer-about">
-                    <a href="/" class="nav-logo" style="margin-bottom: 16px;">
-                        <img src="/assets/logo.png" alt="SK Transports Logo">
-                        <div class="nav-logo-text">
-                            <span class="brand-title">SK <span>TRANSPORTS</span></span>
-                            <span class="brand-subtitle">Heavy Lifting KSA</span>
-                        </div>
-                    </a>
-                    <p data-i18n="footer_about_text">
-                        Saudi Arabia’s trusted partner for heavy truck mobile crane rental and direct machinery sales. Delivering certified lifting power for Vision 2030 mega-projects.
-                    </p>
-                </div>
-
-                <div class="footer-col">
-                    <h4 data-i18n="footer_links_title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="/"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_home">Home</span></a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_fleet">Fleet (Rent & Sale)</span></a></li>
-                        <li><a href="/services"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_services">Services</span></a></li>
-                        <li><a href="/safety"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_safety">Safety & Compliance</span></a></li>
-                        <li><a href="/about"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_about">About Us</span></a></li>
-                        <li><a href="/contact-us"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_contact">Contact Us</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Fleet Capacity</h4>
-                    <ul class="footer-links">
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 500 (50T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 800 (80T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 1000 (100T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 1600 (160T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY SAC 2200 (220T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY SAC 5000 (500T)</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 data-i18n="footer_locations_title">Saudi Arabia Yards & Hubs</h4>
-                    <div class="footer-locations">
-                        <div class="location-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <strong>Riyadh Central Yard</strong>
-                                <span data-i18n="footer_loc_riyadh">Exit 18, Industrial Area, Riyadh, KSA</span>
-                            </div>
-                        </div>
-                        <div class="location-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <strong>Eastern Province Hub</strong>
-                                <span data-i18n="footer_loc_dammam">King Abdulaziz Port Rd, Dammam / Jubail</span>
-                            </div>
-                        </div>
-                        <div class="location-item" style="margin-top: 10px;">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <strong>Direct Saudi Hotline:</strong>
-                                <a href="tel:+966500000000" style="color: var(--primary); font-weight: 700;">+966 50 000 0000</a>
-                            </div>
-                        </div>
+    <!-- Footer -->
+    <footer style="background: #01040f; border-top: 1px solid rgba(255,255,255,0.08); padding: 70px 20px 30px;">
+        <div class="footer-container" style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 50px;">
+            <div>
+                <a href="/" class="logo" style="margin-bottom: 15px; display: inline-block;"><img src="/assets/logo.png" alt="SK TRANSPORTS" style="height: 48px;"></a>
+                <p style="color: var(--text-dim); font-size: 0.88rem; line-height: 1.6; margin-bottom: 20px;">
+                    Saudi Arabia’s trusted partner for heavy truck mobile crane rental and direct machinery sales. Delivering certified lifting power for Vision 2030 mega-projects.
+                </p>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+                    <li><a href="/"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Home</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Fleet (Rent & Sale)</a></li>
+                    <li><a href="/services"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Services</a></li>
+                    <li><a href="/safety"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Safety & Compliance</a></li>
+                    <li><a href="/about"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> About Us</a></li>
+                    <li><a href="/contact-us"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Fleet Capacity</h4>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 500 (50T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 800 (80T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 1000 (100T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 1600 (160T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY SAC 2200 (220T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY SAC 5000 (500T)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Saudi Yards & Hubs</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.85rem; color: var(--text-dim);">
+                    <div>
+                        <strong style="color: #fff; display: block;">Riyadh Central Yard</strong>
+                        <span>Exit 18, Industrial Area, Riyadh, KSA</span>
+                    </div>
+                    <div>
+                        <strong style="color: #fff; display: block;">Direct Saudi Hotline:</strong>
+                        <a href="tel:+966500000000" style="color: var(--primary); font-weight: 700; font-size: 0.95rem;">+966 50 000 0000</a>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p data-i18n="footer_rights">© 2026 SK Transports KSA. All Rights Reserved. Aramco & TUV Standard Compliant.</p>
-            </div>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; font-size: 0.8rem; color: var(--text-dim);">
+            <p>© 2026 SK Transports KSA. All Rights Reserved. Aramco Standard & TUV Certified.</p>
         </div>
     </footer>
 
-    <!-- PERSISTENT FLOATING WHATSAPP -->
+    <!-- Floating WhatsApp -->
     <a href="https://wa.me/966500000000?text=Hello%20SK%20Transports%20KSA,%20I%20would%20like%20to%20learn%20more%20about%20your%20company." 
        target="_blank" 
-       class="floating-whatsapp-btn" 
-       aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-        <div class="floating-whatsapp-pulse"></div>
+       class="floating-whatsapp" 
+       style="position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px; background: #25d366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); z-index: 2500; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Scripts -->
-    <script src="/js/main.js?v=3.0"></script>
+    <!-- Main JavaScript -->
+    <script src="/js/main.js?v=4.0"></script>
 </body>
 
 </html>

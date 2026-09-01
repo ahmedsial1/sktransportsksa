@@ -4,340 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safety & Compliance Standards | Saudi Aramco & TUV Certified Cranes - SK Transports KSA</title>
+    <title>Safety & Compliance | Saudi Aramco Standards - SK Transports</title>
     <meta name="description"
-        content="Zero-incident lifting operations. Saudi Aramco GI 7.027/7.028 compliance, TUV Middle East third-party inspection, certified Level 1-3 riggers, and daily 10-point inspection protocols across Saudi Arabia.">
+        content="Saudi Aramco GI 7.027 & GI 7.028 certified safety protocols, TUV Middle East inspections, and 10-Point Pre-Lift Daily Inspection Protocol for mobile cranes in Saudi Arabia.">
+    <link rel="stylesheet" href="/styles/main.css?v=4.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;700;900&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://sktransportsksa.com/safety" />
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css?v=3.0">
 </head>
 
 <body>
 
-    <!-- TOP UTILITY BAR -->
-    <div class="top-utility-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <div class="top-info-item">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <a href="tel:+966500000000">+966 50 000 0000</a>
-                        <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="top_phone_label">(24/7 Saudi Operations Hotline)</span>
-                    </div>
-                    <div class="top-info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@sktransportsksa.com">info@sktransportsksa.com</a>
-                    </div>
-                </div>
-                <div class="top-bar-right">
-                    <div class="top-info-item" data-i18n="top_service_areas">
-                        <i class="fa-solid fa-location-dot"></i> Service Coverage: Riyadh | Dammam / Jubail | Jeddah | NEOM
-                    </div>
-                    <div class="top-badge-saudi" data-i18n="top_badge">
-                        <i class="fa-solid fa-shield-halved"></i> Saudi Vision 2030 Partner
-                    </div>
-                    <button class="lang-selector-btn" onclick="toggleLanguage()">
-                        <i class="fa-solid fa-globe"></i>
-                        <span id="lang-toggle-text">العربية (AR)</span>
-                    </button>
-                </div>
+    <!-- Hoist Cable Visual -->
+    <div id="hoist-cable" style="position: fixed; left: 20px; top: 0; width: 2px; height: 30%; background: linear-gradient(180deg, var(--primary), transparent); z-index: 999; opacity: 0.3; pointer-events: none;"></div>
+
+    <!-- Top Ticker Bar -->
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item" data-i18n="ticker_text">
+                <i class="fa-solid fa-shield-halved"></i> ARAMCO & TUV STANDARDS COMPLIANT | SANY 50T–500T FLEET | 24/7 SUPPORT IN RIYADH, DAMMAM, JEDDAH & NEOM | DIRECT FACTORY SALES
+            </div>
+            <div class="ticker-item" data-i18n="ticker_text">
+                <i class="fa-solid fa-shield-halved"></i> ARAMCO & TUV STANDARDS COMPLIANT | SANY 50T–500T FLEET | 24/7 SUPPORT IN RIYADH, DAMMAM, JEDDAH & NEOM | DIRECT FACTORY SALES
             </div>
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION (HEADER) -->
-    <header class="header-main">
-        <div class="container">
-            <nav class="nav-container">
-                <a href="/" class="nav-logo">
-                    <img src="/assets/logo.png" alt="SK Transports KSA Logo">
-                    <div class="nav-logo-text">
-                        <span class="brand-title">SK <span>TRANSPORTS</span></span>
-                        <span class="brand-subtitle">Heavy Lifting & Cranes KSA</span>
-                    </div>
-                </a>
-
-                <button class="mobile-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <ul class="nav-menu">
-                    <li><a href="/" data-i18n="nav_home"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="/fleet" data-i18n="nav_fleet"><i class="fa-solid fa-truck-monster"></i> Fleet (Rent & Sale)</a></li>
-                    <li><a href="/services" data-i18n="nav_services"><i class="fa-solid fa-gears"></i> Services</a></li>
-                    <li><a href="/safety" class="active" data-i18n="nav_safety"><i class="fa-solid fa-shield-halved"></i> Safety & Compliance</a></li>
-                    <li><a href="/about" data-i18n="nav_about"><i class="fa-solid fa-building"></i> About Us</a></li>
-                    <li><a href="/contact-us" data-i18n="nav_contact"><i class="fa-solid fa-headset"></i> Contact</a></li>
-                </ul>
-
-                <div class="nav-actions">
-                    <a href="/#rfq-section" class="btn btn-primary btn-sm" data-i18n="nav_quote_btn">
-                        <i class="fa-solid fa-file-invoice-dollar"></i> Request a Quote
-                    </a>
-                </div>
-            </nav>
+    <!-- Main Navigation Header -->
+    <nav id="main-nav">
+        <a href="/" class="logo"><img src="/assets/logo.png" alt="SK TRANSPORTS KSA"></a>
+        
+        <!-- Mobile Burger -->
+        <div class="mobile-burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
+        
+        <ul class="nav-links">
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="/fleet" data-i18n="nav_fleet">Fleet (Rent & Sale)</a></li>
+            <li><a href="/services" data-i18n="nav_services">Services</a></li>
+            <li><a href="/safety" class="active" data-i18n="nav_safety">Safety & Compliance</a></li>
+            <li><a href="/about" data-i18n="nav_about">About Us</a></li>
+            <li><a href="/contact-us" data-i18n="nav_contact">Contact</a></li>
+        </ul>
 
-    <!-- PAGE BANNER -->
-    <section style="padding: 60px 0; background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-main) 100%); border-bottom: 1px solid var(--border-color); text-align: center;">
-        <div class="container">
-            <div class="section-badge">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span data-i18n="safety_badge">Uncompromising Safety Standards</span>
-            </div>
-            <h1 style="font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">
-                Saudi Aramco & TUV Certified Safety Protocols
-            </h1>
-            <p style="color: var(--text-dim); max-width: 750px; margin: 0 auto; font-size: 1.05rem;">
-                Operating with a zero-incident safety culture across refineries, petrochemical plants, infrastructure mega-projects, and renewable energy sites in Saudi Arabia.
-            </p>
-        </div>
-    </section>
-
-    <!-- DETAILED SAFETY STANDARDS -->
-    <section class="section">
-        <div class="container">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="/#rfq-section" class="btn-premium" style="padding: 9px 20px; font-size: 0.85rem;" data-i18n="nav_quote_btn">Request a Quote</a>
             
-            <div class="safety-grid" style="margin-bottom: 60px;">
-                <div>
-                    <h2 style="font-size: 2rem; margin-bottom: 16px;">Rigorous Saudi Aramco GI Compliance</h2>
-                    <p style="color: var(--text-dim); margin-bottom: 20px; line-height: 1.7;">
-                        All mobile cranes in the SK Transports fleet comply strictly with Saudi Aramco General Instructions (GI 7.027 for Crane Operations and GI 7.028 for Crane Safety Requirements).
-                    </p>
-                    <div style="display: flex; flex-direction: column; gap: 14px;">
-                        <div style="display: flex; gap: 12px; align-items: flex-start;">
-                            <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
-                            <div>
-                                <strong style="color: #FFF;">Valid Saudi Aramco Inspection Stickers:</strong>
-                                <p style="font-size: 0.85rem; color: var(--text-dim);">Annual third-party and Aramco plant inspection certificates issued and verified.</p>
-                            </div>
-                        </div>
-                        <div style="display: flex; gap: 12px; align-items: flex-start;">
-                            <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
-                            <div>
-                                <strong style="color: #FFF;">Calibrated Load Moment Indicators (LMI):</strong>
-                                <p style="font-size: 0.85rem; color: var(--text-dim);">Fully certified electronic sensors with automatic cut-off and visual/audible alarms.</p>
-                            </div>
-                        </div>
-                        <div style="display: flex; gap: 12px; align-items: flex-start;">
-                            <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
-                            <div>
-                                <strong style="color: #FFF;">Aramco Tested & Certified Operators:</strong>
-                                <p style="font-size: 0.85rem; color: var(--text-dim);">Operators holding verified Aramco heavy crane certification cards with spotless safety records.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="safety-card-box">
-                    <img src="/assets/advantage.jpg.jpeg" alt="Aramco & TUV Inspection" style="border-radius: var(--radius-md); width: 100%; height: 260px; object-fit: cover; margin-bottom: 20px;">
-                    <h3 style="color: #FFF; font-size: 1.25rem; margin-bottom: 8px;">TUV Middle East Certified Rigging Gear</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.6;">
-                        All synthetic slings, steel wire chokers, D-shackles, spreader bars, and snatch blocks carry valid TUV Middle East proof load test certificates and color-coded quarterly inspection tags.
-                    </p>
+            <div class="lang-selector-container">
+                <button class="lang-selector-btn" onclick="toggleLangMenu()">
+                    <span id="active-flag">🇬🇧 EN</span>
+                </button>
+                <div class="lang-dropdown-content">
+                    <a href="javascript:void(0)" onclick="setLanguage('en')">English (EN)</a>
+                    <a href="javascript:void(0)" onclick="setLanguage('ar')">العربية (AR)</a>
                 </div>
             </div>
+        </div>
+    </nav>
 
-            <!-- 10-Point Pre-Lift Inspection Grid -->
-            <div style="background: var(--bg-card); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 40px 30px; margin-bottom: 60px;">
-                <div style="text-align: center; max-width: 700px; margin: 0 auto 35px;">
-                    <div class="section-badge"><i class="fa-solid fa-list-check"></i> Daily Protocol</div>
-                    <h3 style="font-size: 1.8rem; color: #FFF;">The 10-Point Pre-Lift Daily Inspection Checklist</h3>
-                    <p style="color: var(--text-dim); font-size: 0.9rem;">
-                        Before turning the key on any job site in Saudi Arabia, our certified crane operators and rigging supervisors execute this mandatory 10-point check:
-                    </p>
-                </div>
+    <!-- Page Header Banner -->
+    <div style="padding: 130px 20px 50px; text-align: center; background: radial-gradient(circle at 50% 30%, rgba(251, 146, 60, 0.1) 0%, transparent 70%);">
+        <h1 style="font-size: 3rem; font-weight: 900; color: #fff; text-transform: uppercase;">
+            Safety & <span style="color: var(--primary);">Compliance</span>
+        </h1>
+        <p style="color: var(--text-dim); max-width: 750px; margin: 15px auto 0; font-size: 1.1rem;">
+            Zero-Compromise Safety: Saudi Aramco GI Standards, TUV Middle East Certification, and Rigorous Daily Pre-Lift Inspections.
+        </p>
+    </div>
 
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px;">
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">01</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Wire Rope & Drum Spooling</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Inspection for kinks, bird-caging, broken wires, and proper spooling.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">02</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Anti-Two-Block (A2B) Switches</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Functional test of upper limit trip switch and hoist lock mechanism.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">03</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">LMI Computer & Radius Calibration</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Verification of boom length, angle transducers, and tare weight zeroing.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">04</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Hydraulic Outrigger Full Extension & Matting</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Level bubble check and deployment of hardwood/steel load distribution mats.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">05</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Hydraulic Cylinder & Seal Pressure</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Visual check for fluid leaks, holding valve integrity, and cylinder creep.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">06</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Main Hook Block & Safety Latch</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Hook throat opening measurement, bearing rotation, and spring latch check.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">07</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Wind Speed Anemometer Reading</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Boom tip wind monitoring against maximum allowable operational limits.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">08</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Ground Bearing Capacity & Underground Hazards</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Site survey verification for buried pipes, trenches, and soil density.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">09</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Emergency Stop & Cabin Controls</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Pilot controls, deadman switch, horn, fire extinguisher, and mirrors.</span>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(10, 15, 26, 0.6); padding: 16px 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; gap: 12px;">
-                        <span style="color: var(--primary); font-weight: 900; font-size: 1.2rem;">10</span>
-                        <div>
-                            <strong style="color: #FFF; display: block; font-size: 0.92rem;">Pre-Lift Tool-Box Talk (TBT) & Permit to Work</strong>
-                            <span style="font-size: 0.8rem; color: var(--text-dim);">Review of Critical Lift Plan with riggers, signalmen, and HSE engineers.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Call to Action Banner -->
-            <div style="background: linear-gradient(135deg, rgba(255, 184, 0, 0.15) 0%, rgba(15, 23, 42, 0.9) 100%); border: 1px solid var(--border-primary); padding: 35px; border-radius: var(--radius-lg); text-align: center;">
-                <h3 style="font-size: 1.6rem; color: #FFF; margin-bottom: 10px;">Need an Aramco-Approved Crane for Your Next Lift?</h3>
-                <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto 20px; font-size: 0.95rem;">
-                    Our compliance department can provide all required third-party inspection packages, operator certifications, and critical lift plans within 2 hours.
+    <!-- Safety Content Grid -->
+    <section class="section" style="padding: 20px 20px 80px;">
+        <div class="grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1400px; margin: 0 auto;">
+            
+            <div class="glass-card" style="padding: 35px 25px;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"><i class="fa-solid fa-award"></i></div>
+                <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 15px;">Saudi Aramco GI 7.027 & 7.028</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+                    Our entire fleet undergoes strict Aramco mechanical testing and holds valid inspection stickers for oil & gas refinery operations.
                 </p>
-                <a href="/#rfq-section" class="btn btn-primary btn-lg">
-                    <i class="fa-solid fa-file-shield"></i> Request Certified Crane Quote
-                </a>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.85rem; line-height: 2;">
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Aramco valid crane inspection sticker</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Aramco-tested heavy crane operators</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Certified Rigger I & II on site</li>
+                </ul>
+            </div>
+
+            <div class="glass-card" style="padding: 35px 25px;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"><i class="fa-solid fa-certificate"></i></div>
+                <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 15px;">TUV Middle East 3rd Party Certs</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+                    Every lifting gear, wire rope sling, shackle, and spreader beam is certified with valid 3rd-party proof load test certificates.
+                </p>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.85rem; line-height: 2;">
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Annual comprehensive NDT testing</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Load Moment Indicator (LMI) calibration</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Rigging gear color coding compliant</li>
+                </ul>
+            </div>
+
+            <div class="glass-card" style="padding: 35px 25px;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"><i class="fa-solid fa-list-check"></i></div>
+                <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 15px;">10-Point Pre-Lift Daily Protocol</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+                    Mandatory daily safety checklist performed prior to extending outriggers or starting engine ignition.
+                </p>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.85rem; line-height: 2;">
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Ground compaction & matting check</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Anti-Two-Block (A2B) switch test</li>
+                    <li><i class="fa-solid fa-check" style="color: var(--primary);"></i> Hydraulic pressure & seal inspection</li>
+                </ul>
             </div>
 
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer-main">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col footer-about">
-                    <a href="/" class="nav-logo" style="margin-bottom: 16px;">
-                        <img src="/assets/logo.png" alt="SK Transports Logo">
-                        <div class="nav-logo-text">
-                            <span class="brand-title">SK <span>TRANSPORTS</span></span>
-                            <span class="brand-subtitle">Heavy Lifting KSA</span>
-                        </div>
-                    </a>
-                    <p data-i18n="footer_about_text">
-                        Saudi Arabia’s trusted partner for heavy truck mobile crane rental and direct machinery sales. Delivering certified lifting power for Vision 2030 mega-projects.
-                    </p>
-                </div>
-
-                <div class="footer-col">
-                    <h4 data-i18n="footer_links_title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="/"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_home">Home</span></a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_fleet">Fleet (Rent & Sale)</span></a></li>
-                        <li><a href="/services"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_services">Services</span></a></li>
-                        <li><a href="/safety"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_safety">Safety & Compliance</span></a></li>
-                        <li><a href="/about"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_about">About Us</span></a></li>
-                        <li><a href="/contact-us"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="nav_contact">Contact Us</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Fleet Capacity</h4>
-                    <ul class="footer-links">
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 500 (50T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 800 (80T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 1000 (100T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY STC 1600 (160T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY SAC 2200 (220T)</a></li>
-                        <li><a href="/fleet"><i class="fa-solid fa-truck"></i> SANY SAC 5000 (500T)</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 data-i18n="footer_locations_title">Saudi Arabia Yards & Hubs</h4>
-                    <div class="footer-locations">
-                        <div class="location-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <strong>Riyadh Central Yard</strong>
-                                <span data-i18n="footer_loc_riyadh">Exit 18, Industrial Area, Riyadh, KSA</span>
-                            </div>
-                        </div>
-                        <div class="location-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <strong>Eastern Province Hub</strong>
-                                <span data-i18n="footer_loc_dammam">King Abdulaziz Port Rd, Dammam / Jubail</span>
-                            </div>
-                        </div>
-                        <div class="location-item" style="margin-top: 10px;">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <strong>Direct Saudi Hotline:</strong>
-                                <a href="tel:+966500000000" style="color: var(--primary); font-weight: 700;">+966 50 000 0000</a>
-                            </div>
-                        </div>
+    <!-- Footer -->
+    <footer style="background: #01040f; border-top: 1px solid rgba(255,255,255,0.08); padding: 70px 20px 30px;">
+        <div class="footer-container" style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 50px;">
+            <div>
+                <a href="/" class="logo" style="margin-bottom: 15px; display: inline-block;"><img src="/assets/logo.png" alt="SK TRANSPORTS" style="height: 48px;"></a>
+                <p style="color: var(--text-dim); font-size: 0.88rem; line-height: 1.6; margin-bottom: 20px;">
+                    Saudi Arabia’s trusted partner for heavy truck mobile crane rental and direct machinery sales. Delivering certified lifting power for Vision 2030 mega-projects.
+                </p>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+                    <li><a href="/"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Home</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Fleet (Rent & Sale)</a></li>
+                    <li><a href="/services"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Services</a></li>
+                    <li><a href="/safety"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Safety & Compliance</a></li>
+                    <li><a href="/about"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> About Us</a></li>
+                    <li><a href="/contact-us"><i class="fa-solid fa-chevron-right" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Fleet Capacity</h4>
+                <ul style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 500 (50T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 800 (80T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 1000 (100T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY STC 1600 (160T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY SAC 2200 (220T)</a></li>
+                    <li><a href="/fleet"><i class="fa-solid fa-truck" style="color: var(--primary); font-size: 0.75rem; margin-right: 6px;"></i> SANY SAC 5000 (500T)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary); padding-bottom: 6px; display: inline-block;">Saudi Yards & Hubs</h4>
+                <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.85rem; color: var(--text-dim);">
+                    <div>
+                        <strong style="color: #fff; display: block;">Riyadh Central Yard</strong>
+                        <span>Exit 18, Industrial Area, Riyadh, KSA</span>
+                    </div>
+                    <div>
+                        <strong style="color: #fff; display: block;">Direct Saudi Hotline:</strong>
+                        <a href="tel:+966500000000" style="color: var(--primary); font-weight: 700; font-size: 0.95rem;">+966 50 000 0000</a>
                     </div>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p data-i18n="footer_rights">© 2026 SK Transports KSA. All Rights Reserved. Aramco & TUV Standard Compliant.</p>
-            </div>
+        </div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; font-size: 0.8rem; color: var(--text-dim);">
+            <p>© 2026 SK Transports KSA. All Rights Reserved. Aramco Standard & TUV Certified.</p>
         </div>
     </footer>
 
-    <!-- PERSISTENT FLOATING WHATSAPP -->
-    <a href="https://wa.me/966500000000?text=Hello%20SK%20Transports%20KSA,%20I%20am%20inquiring%20about%20safety%20certifications." 
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/966500000000?text=Hello%20SK%20Transports%20KSA,%20I%20have%20a%20safety/compliance%20inquiry." 
        target="_blank" 
-       class="floating-whatsapp-btn" 
-       aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-        <div class="floating-whatsapp-pulse"></div>
+       class="floating-whatsapp" 
+       style="position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px; background: #25d366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 6px 20px rgba(37,211,102,0.4); z-index: 2500; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Scripts -->
-    <script src="/js/main.js?v=3.0"></script>
+    <!-- Main JavaScript -->
+    <script src="/js/main.js?v=4.0"></script>
 </body>
 
 </html>
