@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Vercel & Node
+.vercel
+node_modules/
+.npm
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Local build artifacts
+dist/
+build/
+.next/
+out/
+.env*
+!.env.example
